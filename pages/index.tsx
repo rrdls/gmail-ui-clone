@@ -1,10 +1,15 @@
-import Link from "next/link";
 import Layout from "../components/Layout";
-
+import TopBar from "../components/TopBar";
+import LeftSideBar from "../components/LeftSideBar";
+import RightSideBar from "../components/RightSideBar";
+import Main from "../components/Main";
 function IndexPage() {
   return (
-    <Layout title="Home | Next.js + TypeScript Example">
-      <h1>Hello Next.js 👋</h1>
+    <Layout>
+      <TopBar />
+      <LeftSideBar />
+      <Main />
+      <RightSideBar />
     </Layout>
   );
 }
